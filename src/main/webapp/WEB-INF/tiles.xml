@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+</beans>
+ -->
+ 
+
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+<definition name="BaseLayout" template="/WEB-INF/Pages/BaseLayout.jsp">
+<put-attribute name="header" value="/WEB-INF/Pages/Header1.jsp"/>
+<put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/>
+<put-attribute name="body" value="/WEB-INF/Pages/Body.jsp"/>
+<put-attribute name="footer" value="/WEB-INF/Pages/Footer.jsp"/>
+</definition>
+
+<definition name="Welcome" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/Welcome.jsp"/>
+</definition>
+
+<definition name="LoginView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/LoginView.jsp"/>
+</definition>
+ 
+<definition name="UserRegistration" extends="BaseLayout">
+<put-attribute name="menu" value=""/>
+<put-attribute name="body" value="/WEB-INF/Pages/UserRegistration.jsp"/>
+</definition>
+
+<definition name="ForgetPasswordView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body"  value="/WEB-INF/Pages/ForgetPassword.jsp"/>
+</definition>
+
+<definition name="MyProfileView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/MyProfileView.jsp"/>
+</definition>
+
+<definition name="ChangePasswordView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/ChangePasswordView.jsp"/>
+</definition>
+ 
+
+ <definition name="MarksheetView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/MarksheetView.jsp" />
+</definition>
+ <definition name="GetMarksheet" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/GetMarksheet.jsp"/>
+</definition>
+ <definition name="MarksheetMeritList" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/MarksheetMeritList.jsp"/>
+</definition>
+<definition name="MarksheetListView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/MarksheetListView.jsp"/>
+</definition>
+
+<definition name="RoleView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/RoleView.jsp"/>
+</definition>
+ 
+<definition name="RoleListView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/RoleListView.jsp"/>
+</definition>
+
+<definition name="CollegeView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/CollegeView.jsp"/>
+</definition>
+ 
+ <definition name="CollegeListView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/CollegeListView.jsp"/>
+</definition> 
+
+<definition name="UserView" extends="BaseLayout">
+<put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/>
+<put-attribute name="body" value="/WEB-INF/Pages/UserView.jsp"/>
+</definition>
+
+<definition name="UserListView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body"  value="/WEB-INF/Pages/UserListView.jsp"/>
+</definition>
+
+ <definition name="StudentView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/StudentView.jsp"/>
+</definition>
+  <definition name="StudentListView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/StudentListView.jsp"/>
+</definition> 
+
+<definition name="CourseView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/CourseView.jsp"/>
+</definition> 
+
+<definition name="CourseListView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/CourseListView.jsp"/>
+</definition>
+ 
+<definition name="SubjectView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/SubjectView.jsp"/>
+</definition>
+  <definition name="SubjectListView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/SubjectListView.jsp"/>
+</definition>
+<definition name="FacultyView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/FacultyView.jsp"/>
+</definition>
+ 
+<definition name="FacultyListView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/FacultyListView.jsp"/>
+</definition>
+<definition name="TimeTableView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/TimeTableView.jsp"/>
+</definition>
+<definition name="TimeTableListView" extends="BaseLayout">
+<!-- <put-attribute name="menu" value="/WEB-INF/Pages/menuEx.jsp"/> -->
+<put-attribute name="body" value="/WEB-INF/Pages/TimeTableListView.jsp"/>
+</definition> 
+ 
+</tiles-definitions>
